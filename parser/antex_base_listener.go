@@ -26,3 +26,9 @@ func (s *BaseAntexListener) EnterExpr(ctx *ExprContext) {}
 
 // ExitExpr is called when production expr is exited.
 func (s *BaseAntexListener) ExitExpr(ctx *ExprContext) {}
+
+// EnterValue is called when production value is entered.
+func (s *BaseAntexListener) EnterValue(ctx *ValueContext) {}
+
+// ExitValue is called when production value is exited.
+func (s *BaseAntexListener) ExitValue(ctx *ValueContext) {}

@@ -5,7 +5,7 @@ all:
 
 .PHONY: example
 example:
-	go run . '1'
+	go run . '1+1*2'
 
 .PHONY: docker-build
 docker-build:

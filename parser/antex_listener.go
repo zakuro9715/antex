@@ -11,6 +11,12 @@ type AntexListener interface {
 	// EnterExpr is called when entering the expr production.
 	EnterExpr(c *ExprContext)
 
+	// EnterValue is called when entering the value production.
+	EnterValue(c *ValueContext)
+
 	// ExitExpr is called when exiting the expr production.
 	ExitExpr(c *ExprContext)
+
+	// ExitValue is called when exiting the value production.
+	ExitValue(c *ValueContext)
 }
